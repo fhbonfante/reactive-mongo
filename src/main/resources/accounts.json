@@ -1,0 +1,18 @@
+[
+  {
+    "id": "",
+    "owner": "Felipe",
+    "balance": {
+      "amount": 1000.0,
+      "withdrawLimit": 500.0
+    }
+  },
+  {
+    "id": "",
+    "owner": "Rosana",
+    "balance": {
+      "amount": 2000.0,
+      "withdrawLimit": 1000.0
+    }
+  }
+]

@@ -1,4 +1,4 @@
-package com.fhbonfante.reactive.domain;
+package com.fhbonfante.reactive.core.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -8,15 +8,15 @@ public class Account {
     @Id
     private String id;
     private String owner;
-    private Double value;
+    private Balance balance;
 
     public Account() {
     }
 
-    public Account(String id, String owner, Double value) {
+    public Account(String id, String owner, Balance balance) {
         this.id = id;
         this.owner = owner;
-        this.value = value;
+        this.balance = balance;
     }
 
     public String getId() {
@@ -35,11 +35,20 @@ public class Account {
         this.owner = owner;
     }
 
-    public Double getValue() {
-        return value;
+    public Balance getBalance() {
+        return balance;
     }
 
-    public void setValue(Double value) {
-        this.value = value;
+    public void setBalance(Balance balance) {
+        this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id='" + id + '\'' +
+                ", owner='" + owner + '\'' +
+                ", balance=" + balance.toString() +
+                '}';
     }
 }

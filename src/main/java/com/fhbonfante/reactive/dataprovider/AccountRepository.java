@@ -1,6 +1,6 @@
-package com.fhbonfante.reactive.repository;
+package com.fhbonfante.reactive.dataprovider;
 
-import com.fhbonfante.reactive.domain.Account;
+import com.fhbonfante.reactive.core.model.Account;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
